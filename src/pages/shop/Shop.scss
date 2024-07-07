@@ -1,0 +1,452 @@
+.shop {
+  margin-top: 100px;
+  .bg1 {
+    display: flex;
+    background-image: url("./assets/img/shopimg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 316px;
+    .shop_links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 100px;
+      gap: 8px;
+      .link_head {
+        h1 {
+          font-family: Poppins;
+          font-size: 48px;
+          font-weight: 500;
+          line-height: 72px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+      }
+      .links {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        a {
+          font-family: Poppins;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #000;
+        }
+      }
+    }
+  }
+  .shop_cards {
+    padding: 32px 0;
+    background-color: #f9f1e7;
+    .cards_head {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: space-between;
+      .filter {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: wrap;
+        .column {
+          height: 1px;
+          width: 30px;
+          background-color: #242424;
+          transform: rotate(90deg);
+        }
+        span {
+          font-family: Poppins;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #000;
+        }
+        h2{
+          font-family: Poppins;
+          font-size: 28px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #000;
+        }
+        select{
+          font-family: Poppins;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #000;
+          border: 0;
+          width: 120px;
+          height: 30px;
+          box-shadow: 0 1px 8px 4px #ccc;
+        }
+      }
+      .sort {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        h1{
+          font-family: Poppins;
+          font-size: 28px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #000;
+        }
+        span{
+          font-family: Poppins;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #000;
+          padding: 10px;
+          background-color: #fff;
+        }
+        select{
+          font-family: Poppins;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #000;
+          border: 0;
+          outline: none;
+          border: 0;
+          width: 120px;
+          height: 30px;
+          box-shadow: 0 1px 8px 4px #ccc;
+        }
+      }
+    }
+  }
+  .cards {
+    .cards_content {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
+
+      .cards_shop {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .shop_card {
+          width: 285px;
+          height: 446px;
+          background-color: #f4f5f7;
+          position: relative;
+          margin-top: 32px;
+          cursor: pointer;
+          img {
+            width: 100%;
+            height: 300px;
+            border-radius: 0;
+          }
+          h3 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            right: 18px;
+            top: 18px;
+            z-index: 1;
+            color: #fff;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: #e97171 !important;
+          }
+          .shop_texts {
+            display: flex;
+            flex-direction: column;
+            padding: 16px;
+            gap: 8px;
+
+            h1 {
+              font-family: Poppins;
+              font-size: 19px;
+              font-weight: 600;
+              line-height: 29px;
+              letter-spacing: 0em;
+              text-align: left;
+              color: #3a3a3a;
+            }
+            span {
+              font-family: Poppins;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 24px;
+              letter-spacing: 0em;
+              text-align: left;
+
+              color: #898989;
+            }
+            .row_text {
+              display: flex;
+              align-items: center;
+              gap: 16px;
+              p {
+                font-family: Poppins;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: #b0b0b0;
+              }
+            }
+          }
+
+          .shop_mode {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            position: absolute;
+
+            right: 0;
+            top: 0;
+            left: 0;
+            z-index: 3;
+            transition: 1s;
+            width: 285px;
+            height: 446px;
+            gap: 24px;
+            background-color: #3a3a3aae;
+            button {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: #fff;
+              color: #b88e2f;
+              font-family: Poppins;
+              font-size: 16px;
+              font-weight: 600;
+              line-height: 24px;
+              letter-spacing: 0em;
+              text-align: left;
+              border: 0;
+              width: 202px;
+              height: 48px;
+            }
+            .mode_links {
+              display: flex;
+              align-items: center;
+              gap: 20px;
+              .mode_link {
+                display: flex;
+                align-items: center;
+                gap: 2px;
+                img {
+                  width: 16px;
+                  height: 16px;
+                }
+                span {
+                  color: #fff;
+                  font-family: Poppins;
+                  font-size: 16px;
+                  font-weight: 600;
+                  line-height: 24px;
+                  letter-spacing: 0em;
+                  text-align: left;
+                }
+              }
+            }
+          }
+        }
+        .shop_card:hover {
+          .shop_mode {
+            display: flex;
+            animation-name: mode;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+          }
+          h3 {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .free {
+    display: flex;
+    align-items: center;
+    margin-top: 85px;
+    padding: 100px 55px;
+    background-color: #faf3ea;
+    .free_content {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      margin: 0 20px;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .free_img {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        span {
+          font-family: Poppins;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 30px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #898989;
+        }
+        h1 {
+          font-family: Poppins;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 38px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #242424;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 398px) {
+  .shop {
+    .bg1 {
+      display: flex;
+      background-image: url("./assets/img/shopimg.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 316px;
+      .shop_links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 100px;
+        gap: 8px;
+        .link_head {
+          h1 {
+            font-family: Poppins;
+            font-size: 48px;
+            font-weight: 500;
+            line-height: 72px;
+            letter-spacing: 0em;
+            text-align: left;
+          }
+        }
+        .links {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          a {
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #000;
+          }
+        }
+      }
+    }
+    .shop_cards {
+      padding: 32px 0;
+      background-color: #f9f1e7;
+    }
+    .cards {
+      .cards_content {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+
+        .cards_shop {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          flex-wrap: wrap;
+          justify-content: center;
+          .shop_card {
+            width: 285px;
+            height: 446px;
+            background-color: #f4f5f7;
+            position: relative;
+            margin-top: 32px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .free {
+      display: flex;
+      align-items: center;
+      margin-top: 85px;
+
+      padding: 100px 55px;
+
+      background-color: #faf3ea;
+      .free_content {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin: 0 15px;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .free_img {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          img {
+            width: 120px;
+          }
+          span {
+            font-family: Poppins;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 30px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #898989;
+          }
+          h1 {
+            font-family: Poppins;
+            font-size: 25px;
+            font-weight: 600;
+            line-height: 38px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #242424;
+          }
+        }
+      }
+    }
+  }
+}

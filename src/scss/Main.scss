@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+.container {
+  max-width: 1280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+a,
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+a.active,
+a.active:hover,
+a.active:focus {
+  color: crimson;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
